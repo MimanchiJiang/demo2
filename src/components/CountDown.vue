@@ -54,7 +54,7 @@ export default {
 .CountDownWrapper {
     margin-left: 28px;
     font-size: 20px;
-    margin-right: 25px;
+    margin-right: 26px;
     text-align: center;
     background: white;
     font-weight: 400;
