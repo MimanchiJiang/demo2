@@ -52,9 +52,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .CountDownWrapper {
-    margin-left: 28px;
+    margin-left: 29px;
     font-size: 20px;
-    margin-right: 26px;
+    margin-right: 27px;
     text-align: center;
     background: white;
     font-weight: 400;
