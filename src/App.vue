@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Top />
+    <CountDown />
+    <ButtonBar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Top from './components/Top.vue'
+import ButtonBar from './components/ButtonBar.vue'
+import CountDown from './components/CountDown.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Top, ButtonBar, CountDown
   }
 }
 </script>
@@ -23,6 +26,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: rgb(230, 230, 230);
 }
 </style>
