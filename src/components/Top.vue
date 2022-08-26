@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/top.jpg" alt="" class="top">
+  <img src="../assets/top.png" alt="" class="top">
 </template>
 
 <script>
