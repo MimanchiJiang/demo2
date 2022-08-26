@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <div class="CountDownWrapper">
-            {{ dateFormat(date) }}({{ seconds }})
-        </div>
-
+    <div class="CountDownWrapper">
+        {{ dateFormat(date) }}
+        <span>({{ seconds }})</span>
     </div>
 </template>
 
@@ -37,6 +35,9 @@ export default {
         }, 1000)
         this.timer2 = setInterval(() => {
             _this.seconds -= 1
+            if (_this.seconds < 0) {
+                _this.seconds = 60
+            }
         }, 1000)
     },
     beforeDestroy() {
@@ -56,5 +57,16 @@ export default {
     margin-right: 25px;
     text-align: center;
     background: white;
+    font-weight: 400;
+}
+
+span {
+    background: white;
+    font-weight: 500
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 </style>
